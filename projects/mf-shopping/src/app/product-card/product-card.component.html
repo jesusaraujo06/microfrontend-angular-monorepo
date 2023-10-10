@@ -8,7 +8,7 @@
   <div class="card-description">
     <label class="card-description__title">{{ product.name }} </label>
     <p class="card-description__description">
-      {{ product.description }}
+      {{ product.description | slice : 0 : 100 }}
     </p>
   </div>
 
