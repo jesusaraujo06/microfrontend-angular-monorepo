@@ -1,0 +1,11 @@
+<div class="app">
+  <span>Micro-fronted mf-shopping port 4201</span>
+  <h1>Productos</h1>
+
+  <div class="container">
+    <app-product-card
+      *ngFor="let product of products"
+      [product]="product"
+    ></app-product-card>
+  </div>
+</div>
