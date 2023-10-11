@@ -13,12 +13,15 @@ const routes: Routes = [
         exposedModule: './ProductsModule',
       }).then((m) => m.ProductsModule),
   },
-  
-  // {
-  //   path: 'payment',
-  //   loadChildren: () => import('mfPayment/PaymentComponent')
-  //   .then((c) => c.PaymentComponent),
-  // }
+  {
+    path: 'payment',
+    loadComponent: () => 
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4202/remoteEntry.js',
+        exposedModule: './PaymentComponent',
+      }).then((c) => c.PaymentComponent),
+  },
 ];
 
 @NgModule({
