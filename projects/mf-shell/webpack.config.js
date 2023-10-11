@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   // Los micro-frontends que voy a integrar
   remotes: {
     "mfShopping": "http://localhost:4201/remoteEntry.js",    
-    // "mfPayment": "http://localhost:4200/remoteEntry.js",
+    "mfPayment": "http://localhost:4202/remoteEntry.js",
   },
 
   // Este objeto sirve para compartir cosas entre los micro-frontends

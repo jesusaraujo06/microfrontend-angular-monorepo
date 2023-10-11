@@ -7,5 +7,7 @@ import { CommonsLibService } from '@commons-lib';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(public commonsLibService: CommonsLibService) {}
+  constructor(public commonsLibService: CommonsLibService) {
+    
+  }
 }
